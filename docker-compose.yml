@@ -6,6 +6,7 @@ services:
       - frontend
     volumes:
       - ./data/volume:/usr/src/redmine/files
+      - ./data/plugins:/usr/src/redmine/plugins
     restart: always
     ports:
       - 8080:3000
